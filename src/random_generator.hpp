@@ -30,14 +30,10 @@ template <unsigned int Seed>
 struct RandomGenerator<Seed, 0> : RandomBase<Seed> {};
 
 template <std::size_t N>
-struct Flag {
-	friend constexpr int adl_flag(Flag<N>);
-};
+struct Flag { friend constexpr int adl_flag(Flag<N>); };
 
 template <typename T>
-struct Writer {
-	friend constexpr int adl_flag(T) { return 0; }
-};
+struct Writer { friend constexpr int adl_flag(T) { return 0; } };
 
 template <typename T, int = adl_flag(T{})>
 constexpr std::size_t is_adl_flag_defined(int) { return 1; }
