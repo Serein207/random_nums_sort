@@ -19,10 +19,10 @@ constexpr unsigned int create_seed(const char* first_str,
 
 ```cpp
 template <typename T, std::size_t Size>
-constexpr std::array<T, Size> create_array();
+constexpr auto create_array(const T max)；
 ```
 
-每次重新编译会生成一个100（可改）以内的随机数数组，所以好像真的没什么用 :expressionless:
+每次重新编译会生成一个max以内的随机数数组，所以好像真的没什么用 :expressionless:
 
 ## RAII文件处理器
 
