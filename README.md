@@ -10,7 +10,7 @@ NJUPT程序设计实践周项目，包含C++实现的编译期随机数生成，
 ```cpp
 template <typename... RemainingString>
 constexpr unsigned int create_seed(const char* first_str,
-	const RemainingString&... remaining_strs);
+    const RemainingString&... remaining_strs);
  ```
 
 ## 编译期实数类型随机数生成器
