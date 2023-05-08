@@ -15,6 +15,8 @@ namespace sort {
         out << ele << " ";
     }
 
+    Sequence get_sequence() const { return c; }
+
     void sort_heap() {
       for (int i = c.size() - 1; i >= 0; --i) {
         std::swap(c[0], c[i]);
