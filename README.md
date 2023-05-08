@@ -1,7 +1,7 @@
 # random_nums_sort
 NJUPT程序设计实践周项目，包含C++实现的编译期随机数生成，和运行期堆排序（因为编译期堆排不会写）
 
-本项目也提供一些可能有用的API
+:relaxed: 本项目也提供一些可能有用的API ~~可能也没什么用~~ 
 
 ## 编译期随机数种子生成器
 
@@ -19,8 +19,10 @@ constexpr unsigned int create_seed(const char* first_str,
 
 ```cpp
 template <typename T, std::size_t Size>
-constexpr auto create_array();
+constexpr std::array<T, Size> create_array();
 ```
+
+每次重新编译会生成一个100（可改）以内的随机数数组，所以好像真的没什么用 :expressionless:
 
 ## RAII文件处理器
 
