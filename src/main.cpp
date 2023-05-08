@@ -5,7 +5,7 @@
 #include "file_handler.h"
 
 int main() {
-  constexpr auto random_nums = create_array<int, 100>();
+  constexpr auto random_nums = create_array<int, 100>(100);
 
   std::for_each(begin(random_nums), end(random_nums), 
     [](auto num) {std::cout << num << " "; });
