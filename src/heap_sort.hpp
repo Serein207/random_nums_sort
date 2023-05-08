@@ -24,7 +24,7 @@ namespace sort {
 
   private:
     void heapify(const std::size_t len, std::size_t hole_index) {
-      if (hole_index >= len) return;
+      if (hole_index >= len) return; 
 
       std::size_t child_index = hole_index * 2 + 1;
       std::size_t max_index = hole_index;
