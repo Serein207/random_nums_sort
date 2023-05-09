@@ -8,7 +8,7 @@
 
 ## 排序算法
 
-(源码)[/src/sort_algorithms.hpp]
+[源码](/src/sort_algorithms.hpp)
 
 ```cpp
 namespace sort {
