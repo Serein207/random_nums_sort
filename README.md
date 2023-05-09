@@ -6,6 +6,16 @@
 
 :relaxed: 本项目也提供一些可能有用的API ~~可能也没什么用~~ 
 
+## 排序算法
+
+(源码)[/src/sort_algorithms.hpp]
+
+```cpp
+namespace sort {
+template <typename T>
+void xxx_sort(T& array);
+}
+
 ## 编译期随机数种子生成器 :pizza:
 
 `random_generator.hpp`
