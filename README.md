@@ -15,6 +15,7 @@ namespace sort {
 template <typename T>
 void xxx_sort(T& array);
 }
+```
 
 ## 编译期随机数种子生成器 :pizza:
 
