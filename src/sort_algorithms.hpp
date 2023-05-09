@@ -149,8 +149,8 @@ void radix_sort(T& array, const std::size_t digits) {
     for (const auto& bucket : buckets) 
       for (const auto& ele : bucket) 
         array[array_index++] = ele;
-  }
-}
+      }
+    }
 
 template <typename T>
 void bucket_sort(T& array) {
@@ -197,7 +197,7 @@ void brick_sort(T& array) {
       }
     }
   }
-  
+
 }
        
 }
